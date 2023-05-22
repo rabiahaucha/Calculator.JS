@@ -6,9 +6,13 @@ let decimal = [];
 let output = document.querySelector("#output");
 
 function display(symbol) {
+    let inpArr = output.value.split('');
     if(symbol == '.' && decimal.includes('.')){
         return;
-    } else if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/') {
+    } else if(symbol == '+' && inpArr[inpArr.length-1] == '+' || symbol == '-' && inpArr[inpArr.length-1] == '-' || symbol == '*' && inpArr[inpArr.length-1] == '*' || symbol == '/' && inpArr[inpArr.length-1] == '/' ){
+        return;
+    } 
+    else if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/') {
         sum = sum + symbol;
         document.getElementById("output").value = sum;
         decimal = [];
