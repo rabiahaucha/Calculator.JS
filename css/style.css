@@ -1,0 +1,57 @@
+
+.container {
+    
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(8, 50px);
+    grid-gap: 10px;
+    width: 18rem;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    justify-content: center;
+    background-color:rgb(107,36,83);
+   
+}
+
+#output {
+    height: 70px;
+grid-column: span 4;
+    border: 1px solid black;
+     margin: 10px;
+     text-align: end;
+     border-radius: 10%;
+    
+    /* width: 100%; */
+}
+button {
+    height: 50px;
+    margin-top: 80px;
+    color: black;
+    justify-content: space-around;
+    border-radius: 50%;
+ 
+ 
+}
+button:hover{
+    background-color: black;
+    color: white;
+     }
+
+
+#clear {
+    border-radius: 20px !important;
+    grid-column: span 2;
+}
+
+#backspace {
+    border-radius: 20px !important;
+    font-size: 30px;
+    color: black;
+    z-index: 100;
+    grid-column: span 2;
+}
+body{
+    background-color: black;
+}
