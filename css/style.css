@@ -48,7 +48,7 @@ button:hover{
 #backspace {
     border-radius: 20px !important;
     font-size: 30px;
-    color: black;
+    color: white;
     z-index: 100;
     grid-column: span 2;
 }
